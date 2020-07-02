@@ -75,8 +75,8 @@ find_package(tf2_ros REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(realsense_msgs)
 
-find_package(realsense2)
-if(NOT realsense2_FOUND)
+find_package(librealsense2)
+if(NOT librealsense2_FOUND)
   message(FATAL_ERROR "\n\n Intel RealSense SDK 2.0 is missing, please install it from https://github.com/IntelRealSense/librealsense/releases\n\n")
 endif()
 
